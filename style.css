@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+   
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+section {
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+
+.info {
+    float: left;
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+    border: 1px;
+    border-radius: 10px;   
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    height: 500px;
+    width: 500px;
+    overflow-y: scroll;
+}
+.popup p {
+    margin: 0;
+    color: black;
+}
+
+#popupButton {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#myPopup {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+/* İstədiyiniz dizayn və rənglər üçün əlavə üslub tətbiq edə bilərsiniz */

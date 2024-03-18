@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TV və Radio</title>
+</head>
+<body>
+    <header>
+        <h1>Top TV Shows App</h1>
+    </header>
+    
+    <section class="tv-section">
+        <h2>Most Popular TV Shows</h2> 
+        <p>A complete list of Most Popular TV Shows. TV Shows are returned in descending order and contain the basic information about them.
+        </p>
+        <a href="myfavoritfilms.html">My Favorit Films</a> - <a href="about.html">About Project </a>
+        <!-- Burada televizyonun izləmək üçün iframe əlavə edilə bilər -->
+        <div class="firstDiv" id="firstDiv">
+              
+        </div> 
+    </section>
+       
+
+        <div class="popup" id="myPopup">
+                <button id="closeButton" style="position: absolute; right: 5px;" onclick="closeMyPopup();">Close</button>
+                <button id="addFavorit" style="position: absolute; top:45px; right: 5px;" onclick="addFavorit();">add Favorit</button>
+ 
+                <div style="text-align: center;" id="popupyazi">
+                 </div>     
+        </div>
+        <script>
+               window.onload = function(){
+                showFilmsdata(1);
+                 }
+        </script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+<div id="currentPageNumber" style="display: none;">1</div>
+<button onclick="nextPage();">Daha çox görüntülə</button>
+</html>
